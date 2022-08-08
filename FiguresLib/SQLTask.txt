@@ -1,0 +1,7 @@
+﻿
+SQL Task.
+
+Select p.Name, c.Name
+From Products p
+Join Products_Categories pc on p.Id = pc.ProductId
+Left Join Categories c on pc.CategoryId = c.Id
